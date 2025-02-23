@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="app.js"></script>
+        <div class="container">
+            <h1>DDx Practice Tool</h1>
+        </div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <p id="prompt"></p>
+            </div>
+
+            <div class="input">
+                <textarea rows="10" cols="100" placeholder="Use this space for notes."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="generatePrompt()">New Prompt</button>
+                <button type="button" id="copy" onclick="copyPrompt()">Copy Prompt to Clipboard</button>
+            </div>
+            
+            <div class="link">
+                <a href="https://chatgpt.com/" target="_blank">Link out to ChatGPT (not paying for API lol)</a>
+            </div>
+        </div>
+    </body>
+</html>
