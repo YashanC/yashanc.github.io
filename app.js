@@ -2,7 +2,7 @@ let labTable = [];
 let symptomTable = []
 
 async function loadSymptomCSV() {
-    const response = await fetch('http://localhost:3000/data/symptoms.csv');
+    const response = await fetch('https://yashanc.github.io/data/symptoms.csv');
     const csvText = await response.text();
     const rows = csvText.split("\n").map(row => row.split(","));
     symptomTable = rows;
@@ -10,7 +10,7 @@ async function loadSymptomCSV() {
 }
 
 async function loadLabCSV() {
-    const response = await fetch('http://localhost:3000/data/labs.csv');
+    const response = await fetch('https://yashanc.github.io/data/labs.csv');
     const csvText = await response.text();
     const rows = csvText.split("\n").map(row => row.split(","));
     labTable = rows;
